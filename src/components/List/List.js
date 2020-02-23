@@ -3,21 +3,27 @@ import styles from './List.scss';
 import Hero from '../Hero/Hero.js';
 import Column from '../Column/Column.js';
 import PropTypes from 'prop-types';
+import {settings} from '../../data/dataStore.js';
+import ReactHtmlParser from 'react-html-parser';
 
 class List extends React.Component {
+  state = {
+    columns: this.props.columns || [],
+  }
+
   render() {
     return (
       <section className={styles.component}>
         <Hero titleText={this.props.title} imageSource={this.props.image}/>
 
         <div className={styles.description}>
-          {this.props.children}
+          {ReactHtmlParser(this.props.description)}
         </div>
 
         <div className={styles.columns}>
-          <Column columnName='First column' />
-          <Column columnName='Second column' />
-          <Column columnName='Third column' />
+          {this.state.columns.map(({key, ...columnProps}) => (
+            <Column key={key} {...columnProps} />
+          ))}
         </div>
       </section>
     )
@@ -26,12 +32,13 @@ class List extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
     image: PropTypes.string,
-    children: PropTypes.node,
+    description: PropTypes.node,
+    columns: PropTypes.array,
   }
 
   static defaultProps = {
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
-    children: <p>I can do all the things!!!</p>,
+    description: settings.defaultListDescription,
   }
 }
 

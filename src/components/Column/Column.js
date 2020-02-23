@@ -6,17 +6,17 @@ class List extends React.Component {
     render() {
       return (
         <section className={styles.component}>
-            <h3 className={styles.title}>{this.props.columnName}</h3>
+            <h3 className={styles.title}>{this.props.title}</h3>
         </section>
       )
     }
     
     static propTypes = {
-        columnName: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
     }
   
     static defaultProps = {
-        columnName: 'Default column',
+        title: 'Default column',
     }
   }
   
