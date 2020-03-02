@@ -10,7 +10,7 @@ import Creator from '../Creator/Creator.js';
 class List extends React.Component {
   state = {
     columns: this.props.columns || [],
-  }
+  }  
 
   addColumn(title){
     this.setState(state => (
