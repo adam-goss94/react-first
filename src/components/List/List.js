@@ -21,9 +21,9 @@ class List extends React.Component {
             key: state.columns.length ? state.columns[state.columns.length-1].key+1 : 0,
             title,
             icon: 'list-alt',
-            cards: []
-          }
-        ]
+            cards: [],
+          },
+        ],
       }
     ));
   }
@@ -48,7 +48,7 @@ class List extends React.Component {
         </div>
 
       </section>
-    )
+    );
   }
   
   static propTypes = {
