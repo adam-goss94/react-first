@@ -5,7 +5,6 @@ import {settings, listData} from '../../data/dataStore.js';
 import Card from '../Card/Card.js';
 import Creator from '../Creator/Creator.js';
 import Icon from '../Icon/Icon.js';
-import ReactHtmlParser from 'react-html-parser';
 
 class List extends React.Component {
   state = {
