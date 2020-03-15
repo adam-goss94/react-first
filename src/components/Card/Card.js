@@ -1,16 +1,23 @@
 import React from 'react';
 import styles from './Card.scss';
 import PropTypes from 'prop-types';
-import ReactHtmlParser from 'react-html-parser';
 
-const Card = props => (
-  <div className={styles.component}>
-    {ReactHtmlParser(props.title)}
-  </div>
-);
+class Card extends React.Component {
+  render() {
+    const {title} = this.props;
+    
+    return (
+      <section className={styles.component}>
+        <h3>
+          {title}
+        </h3>
+      </section>
+    );
+  }
 
-Card.propTypes = {
-  title: PropTypes.node.isRequired,
-};
-  
+  static propTypes = {
+    title: PropTypes.string,
+  }
+}
+
 export default Card;
