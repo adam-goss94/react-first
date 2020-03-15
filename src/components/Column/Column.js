@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
-// eslint-disable-next-line no-unused-vars
 import {settings} from '../../data/dataStore.js';
 /* import Creator from '../Creator/Creator.js'; */
 import Card from '../Card/Card';
@@ -42,6 +41,7 @@ class Column extends React.Component {
 
   static defaultProps = {
     title: 'Default column',
+    icon: settings.defaultColumnIcon,
   }
 }
 
