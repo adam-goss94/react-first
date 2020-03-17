@@ -11,6 +11,6 @@ const mapDispatchToProps = (dispatch, props) => ({
     listId: props.id,
     title,
   })),
-});
+}); 
 
 export default connect(mapStateToProps, mapDispatchToProps)(List);
