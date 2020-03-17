@@ -1,1 +1,1 @@
-npm run create
+web: npm run server package.json
