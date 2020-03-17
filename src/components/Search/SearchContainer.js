@@ -17,4 +17,5 @@ const mapDispatchToProps = (dispatch) => ({
   changeSearchString: newSearchString => dispatch(createAction_changeSearchString(newSearchString)),
 });
 
+
 export default connect(mapStateToProps, mapDispatchToProps)(Search);
