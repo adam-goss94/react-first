@@ -12,6 +12,7 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  iconName: 'moon',
 };
 
 export const pageContents = {
@@ -70,6 +71,20 @@ export const listData = {
       ],
     },
   ],
+};
+
+export const infoData = {
+  title: 'About me!',
+  image: 'https://pngimage.net/wp-content/uploads/2018/06/space-.png-.png',
+  header: 'There is a header of this page!',
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+};
+
+export const faqData = {
+  title: 'FAQ',
+  image: 'https://w0.pngwave.com/png/8/246/atmosphere-of-earth-astronomical-object-outer-space-astronomy-space-png-clip-art.png',
+  header: 'There is a header of this page!',
+  content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 };
 
 const lists = [
