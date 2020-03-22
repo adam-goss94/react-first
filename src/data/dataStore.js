@@ -81,31 +81,31 @@ export const listTwoData = {
   columns: [
     {
       key: 0,
-      title: 'Books',
-      icon: 'book',
+      title: 'Cars',
+      icon: 'car',
       cards: [
         {
           key: 0,
-          title: 'This Is Going to Hurt',
+          title: 'Mitsubishi',
         },
         {
           key: 1,
-          title: 'Interpreter of Maladies',
+          title: 'BMW',
         },
       ],
     },
     {
       key: 1,
-      title: 'Movies',
+      title: 'Super heroes',
       icon: 'film',
       cards: [
         {
           key: 0,
-          title: 'Harry Potter',
+          title: 'Flash',
         },
         {
           key: 1,
-          title: 'Star Wars',
+          title: 'Green Arrow',
         },
       ],
     },
@@ -116,11 +116,11 @@ export const listTwoData = {
       cards: [
         {
           key: 0,
-          title: 'The Witcher',
+          title: 'Worold of Warcraft',
         },
         {
           key: 1,
-          title: 'Skyrim',
+          title: 'League of Legends',
         },
       ],
     },
