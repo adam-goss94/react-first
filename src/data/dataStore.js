@@ -74,60 +74,6 @@ export const listData = {
   ],
 };
 
-export const listTwoData = {
-  id: 'list-2',
-  title: 'Other things to do!',
-  description: 'Interesting things I want to do later!',
-  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
-  columns: [
-    {
-      key: 0,
-      title: 'Cars',
-      icon: 'car',
-      cards: [
-        {
-          key: 0,
-          title: 'Mitsubishi',
-        },
-        {
-          key: 1,
-          title: 'BMW',
-        },
-      ],
-    },
-    {
-      key: 1,
-      title: 'Super heroes',
-      icon: 'film',
-      cards: [
-        {
-          key: 0,
-          title: 'Flash',
-        },
-        {
-          key: 1,
-          title: 'Green Arrow',
-        },
-      ],
-    },
-    {
-      key: 2,
-      title: 'Games',
-      icon: 'gamepad',
-      cards: [
-        {
-          key: 0,
-          title: 'Worold of Warcraft',
-        },
-        {
-          key: 1,
-          title: 'League of Legends',
-        },
-      ],
-    },
-  ],
-};
-
 export const infoData = {
   title: 'About me!',
   image: 'https://pngimage.net/wp-content/uploads/2018/06/space-.png-.png',
@@ -147,6 +93,18 @@ const lists = [
     id: 'list-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-2',
+    title: 'Things to do <sup>later!</sup>',
+    description: 'Nothing special',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-3',
+    title: 'Things to do <sup>ASAP</sup>',
+    description: 'Important things to do',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
 ];
